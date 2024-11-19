@@ -1,14 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SugarTopia</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class = "wrapper">
-        
+    
+<!-- top -->
+    <header>
+        <div class="header">
+            <div class="header-container">
+                <!-- Logo區域 -->
+                <div class="logo">
+                    <img src="../v1/img/logo/Group 221.svg" alt="">
+                </div>
+
+                <!-- 搜尋區域 -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Dessert Shops and Cafes..." />
+                    <input type="text" placeholder="Songshan, Taipei" />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <!-- 新增導航選單 -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#dessert shop">SugarTopia</a></li>
+                    <li><a href="#reviews">Write a Review</a></li>
+                </ul>
+            </nav>
+
+                <!-- 登入和註冊按鈕區域 -->
+                <div class="auth-buttons">
+                    <button type="button">Log In</button>
+                    <button type="button">Sign Up</button>
+                </div>
+            </div>
+            <!-- 新增全寬圖片區域和文字 -->
+        <section class="full-width-image">
+             <div class="text-search-bar-together">   
+                <div class="text-overlay">
+                        <h1>Welcome to SugarTopia</h1>
+                        <!-- <p>Discover the best dessert spots near you</p> -->
+                    </div>
+                        <!-- 搜尋區域 -->
+                        <div class="img-search-bar">
+                            <i class="fa-solid fa-magnifying-glass"></i> <!-- 搜尋圖示 -->
+                            <input type="text" placeholder="Bagels" />
+                        </div>
+                    </div>
+        </section>
+        </div>
+    </header>
+
+<!--------------------------------------- middle ---------------------------------------------->
+    <div class="container">
+        <h1>Recent Activity</h1>
+<!--------------------------------------------- 1 --------------------------------------------------->
+        <div class = 'activities-wrapper'>
+        <div class="activity">
+            <div class="activity-item">
+                <div class="activity-header">
+                    <img src="../v1/img/images/profile2.jpg" alt="User 1" class="profile-img">
+                    <div class="activity-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <!-- 插入图片 -->
+                    <img src="../v1/img/images/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Activity Image" class="activity-image">
+                    <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+<!--------------------------------------------- 2 --------------------------------------------------->
+        <div class="activity">
+            <div class="activity-item">
+                <div class="activity-header">
+                    <img src="../v1/img/images/profile3.jpg" alt="User 1" class="profile-img">
+                    <div class="activity-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <!-- 插入图片 -->
+                    <img src="../v1/img/images/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Activity Image" class="activity-image">
+                    <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+<!--------------------------------------------- 3 --------------------------------------------------->
+        <div class="activity">
+            <div class="activity-item">
+                <div class="activity-header">
+                    <img src="../v1/img/images/profile.jpg" alt="User 1" class="profile-img">
+                    <div class="activity-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <!-- 插入图片 -->
+                    <img src="../v1/img/images/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Activity Image" class="activity-image">
+                    <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+<!--------------------------------------------- 4 --------------------------------------------------->
+        <div class="activity">
+            <div class="activity-item">
+                <div class="activity-header">
+                    <img src="../v1/img/images/profile3.jpg" alt="User 1" class="profile-img">
+                    <div class="activity-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <!-- 插入图片 -->
+                    <img src="../v1/img/images/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Activity Image" class="activity-image">
+                    <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+<!--------------------------------------------- 5 --------------------------------------------------->
+        <div class="activity">
+            <div class="activity-item">
+                <div class="activity-header">
+                    <img src="../v1/img/images/profile.jpg" alt="User 1" class="profile-img">
+                    <div class="activity-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <!-- 插入图片 -->
+                    <img src="../v1/img/images/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Activity Image" class="activity-image">
+                    <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+<!--------------------------------------------- 6 --------------------------------------------------->
+        <div class="activity">
+            <div class="activity-item">
+                <div class="activity-header">
+                    <img src="../v1/img/images/profile3.jpg" alt="User 1" class="profile-img">
+                    <div class="activity-info">
+                        <p class="user-name">Emily C.</p>
+                        <p class="time">22 minutes ago</p>
+                    </div>
+                </div>
+                <div class="activity-content">
+                    <h2>Cupertino.keki</h2>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <!-- 插入图片 -->
+                    <img src="../v1/img/images/deeliver-mUnrb7-xCtk-unsplash.jpg" alt="Activity Image" class="activity-image">
+                    <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vel!</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+        </div>     
+        </div>
     </div>
-</body>
-</html>
+<!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <p>SugarTopia @ 2024. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Business</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/cupertino.keki/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>

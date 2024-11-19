@@ -1,5 +1,366 @@
+@import url("reset.css");
+/* top */
+body {
+    font-family: poppins;
+    width: 100%;
+    background-color: #F7F2E7;
+    margin: 0 auto; 
+    height: 100%; 
+}
 
-.wrapper{
-    background-color:orange;
+header{
+    padding: 24px 40px 0px;
+}
 
+ 
+.full-width-image {
+    position:relative;
+    width: 100%;
+    height: 738px; 
+    /* background-size: cover; */
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:first baseline;
+    text-align: center;
+}
+
+
+header {
+    background-image: url(../img/images/slide1.jpg); 
+    background-size: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #F7F2E7;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin:  auto;
+}
+
+.logo img {
+    height: 38px;
+    /* width: auto; */
+    margin-top: 10px;
+}
+
+/* 搜尋區域 */
+.search-bar {
+    display: flex;
+    align-items: center;  
+    gap: -1px; /* 可以根據需求調整圖示和輸入框之間的間距 */
+    border-radius: 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: auto; /* 讓寬度根據字數自動調整 */
+    min-width: 280px; /* 設定最小寬度 */
+    max-width: 400px; /* 設定最大寬度 */
+    transition: width 0.3s ease; /* 加入寬度變化過渡效果 */
+    border-radius: 0;
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.search-bar i {
+    font-size: 18px;
+    color: white;
+    border: 8px solid #f9a726 ;
+    padding: 2px;
+    background-color: #f9a726;
+    cursor: pointer; /* 鼠標指針變為手形，表示可點擊 */
+}
+
+  
+/* 主導航選單 */
+.main-nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.main-nav li {
+    list-style: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+    font-weight:bold;
+}
+
+.main-nav a:hover {
+    color: #FCDC94;
+}
+
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 登入和註冊按鈕區域 */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 設置登入按鈕的顏色 */
+.auth-buttons button:first-child {
+    background-color: white; /* 設置登入按鈕背景顏色 */
+    color: #f9a726;
+    border: 1px solid #f9a726;
+}
+
+.auth-buttons button:first-child:hover {
+    background-color: #FCDC94; /* 設置登入按鈕懸停時的顏色 */
+    
+}
+
+/* 設置註冊按鈕的顏色 */
+.auth-buttons button:last-child {
+    background-color: #f9a726; /* 設置註冊按鈕背景顏色 */
+}
+
+.auth-buttons button:last-child:hover {
+    background-color: #FCDC94; /* 設置註冊按鈕懸停時的顏色 */
+}
+
+/* 文字覆蓋區 */
+.text-search-bar-together{
+    margin: 0 0 10px 200px;
+}
+.text-overlay h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* 圖片區搜尋區塊 */
+.img-search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+/* 搜尋框 */
+.img-search-bar input {
+    padding: 12px 12px 12px 35px; /* 給搜尋框的左側留更多空間，讓圖示不會與文字重疊 */
+    font-size: 16px;
+    background-color: #f9a726; /* 背景顏色 */
+    border: 1px solid #f9a726;
+    width: 60px;
+    min-width: 60px;
+    max-width: 300px;
+    transition: width 0.3s ease;
+    border-radius: 8px; /* 移除圓角 */
+}
+.img-search-bar input::placeholder {
+    color: white; /* 修改占位符文字颜色 */
+    font-weight: normal;
+}
+
+/* 圖示 */
+.img-search-bar i {
+    position: absolute;
+    left: 30px; /* 調整圖示在搜尋框內的位置 */
+    font-size: 18px;
+    color: white;
+    pointer-events: none; /* 禁止圖示被點擊，保證點擊搜尋框可以進行輸入 */
+}
+/* middle */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 56px 20px;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 56px; /* 增加标题和评论区之间的间隔 */
+    font-size: 28px;
+    font-weight: bold;
+}
+/* 新增一個包裝容器 */
+.activities-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.activity {
+    flex: 0 0 calc(33.33% - 14px); /* 減去 gap 的影響 */
+    max-width: calc(33.33% - 14px);
+}
+
+.activity-item {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.activity-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.activity-info .user-name {
+    font-weight: bold;
+}
+
+.activity-info .time {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.activity-content h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.rating span {
+    color: #FFD700;
+    display: block;  /* 将 span 元素改为块级元素 */
+    text-align: left; /* 可选：明确设置为左对齐 */
+}
+
+.activity-content {
+    padding: 15px;
+}
+
+.activity-content img.activity-image {
+    width: 100%; /* 图片宽度占满容器宽度 */
+    max-width: 400px; /* 最大宽度 */
+    height: auto; /* 保持图片比例 */
+    margin-top: 15px; /* 为图片和上面的元素（如评分）之间增加间隔 */
+    border-radius: 8px; /* 可选：为图片添加圆角 */
+    display: block; /* 让图片成为块级元素 */
+    margin-left: auto; /* 让图片水平居中 */
+    margin-right: auto; /* 让图片水平居中 */
+}
+.review {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+    text-align: left; /* 可选：明确设置为左对齐 */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;  /* 将 span 元素改为块级元素 */
+    text-align: left; /* 可选：明确设置为左对齐 */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .activity-item {
+        width: calc(50% - 20px); /* 小屏幕时每行显示两个项目 */
+    }
+}
+
+@media (max-width: 480px) {
+    .activity-item {
+        width: 100%; /* 超小屏幕时每行显示一个项目 */
+    }
+}
+
+
+/* footer */
+footer {
+    background-color: #f9a726; /* 背景顏色 */
+    padding: 100px 0;
+    text-align: center; /* 居中文本 */
+    width: 100%; /* 确保 footer 占据 100% 宽度 */
+    box-sizing: border-box; /* 包括内边距和边框 */
+    display: flex;
+    justify-content: center; /* 居中内容 */
+    align-items: center; /* 垂直居中 */
+}
+
+.footer-content {
+    max-width: 1200px; /* 限制最大宽度 */
+    width: 100%; /* 使 .footer-content 占据父容器的 100% 宽度 */
+    margin: 0 auto; /* 居中内容 */
+    padding: 0 20px; /* 确保左右边距 */
+    text-align: center; /* 居中文本 */
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
 }
